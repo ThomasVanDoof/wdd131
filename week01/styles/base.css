@@ -30,6 +30,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #course-title {
@@ -45,6 +46,7 @@ nav ul {
   gap: 2rem;
   padding: 0;
   margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 nav a {
@@ -52,6 +54,7 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 nav a:hover {
@@ -65,12 +68,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Libertinus Mono", monospace;
 }
 
 h1 {
   margin-top: 2rem;
   font-size: 2.5rem;
   color: var(--primary);
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .card {
@@ -84,12 +89,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .card h2 {
   margin-top: 0;
   color: var(--secondary);
   font-size: 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .card-img {
@@ -109,6 +116,7 @@ footer {
   bottom: 0;
   margin-top: auto;
   font-size: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 @media (max-width: 600px) {
