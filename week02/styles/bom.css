@@ -67,3 +67,11 @@ li {
 		width: 320px;
 	}
 }
+
+
+#menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+}
