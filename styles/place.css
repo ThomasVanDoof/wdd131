@@ -4,12 +4,18 @@
     --third-color: #bc71d7c3;
     --text-color: rgb(228, 237, 177);
 }
-
+body {
+    margin: 0;
+    font-family: 'Intel One Mono', monospace;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
 header {
     background-color: var(--primary-color);
     padding: 20px;
     text-align: center;
     color: var(--text-color);
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -40,6 +46,7 @@ header {
     box-shadow: 0 7px 16px rgba(0,0,0,0.15);
     max-width: 320px;
     z-index: 2;
+    font-family: 'Playfair Display', serif;
 }
 
 @media (max-width: 700px) {
@@ -62,6 +69,7 @@ header {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Playfair Display', serif;
 }
 
 footer {
@@ -71,6 +79,7 @@ footer {
   color: var(--text-color);
   background: var(--primary-color);
   font-family: var(--body-font);
+  font-family: 'Intel One Mono', monospace;
 }
 
 @media (max-width: 600px) {
