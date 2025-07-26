@@ -1,0 +1,37 @@
+header {
+    background-color: #669cd1;
+    padding: 1rem;
+    text-align: center;
+}
+.lazy-load {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 100;
+    transition: opacity 0.5s ease-in-out;
+}
+main {
+    margin: 0 auto;
+    padding: 2rem;
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+}
+p {
+    text-align: center;
+    color: #666;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lazy Load Example">
+    <meta name="author" content="Thomas Barney">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+    <title>Lazy Load Example</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Lazy Load Example</h1>
+        </header>
+        <section class="lazy-load-section">
+            <h2>Images</h2>
+            <p>Scroll down to load images lazily.</p>
+            <div class="image-container">
+                <img src="images/image1.png" alt="Image 1" class="lazy-load" loading="lazy">
+                <img src="images/image2.jpg" alt="Image 2" class="lazy-load" loading="lazy">
+                <img src="images/image3.png" alt="Image 3" class="lazy-load" loading="lazy">
+                <img src="images/image4.jpg" alt="Image 4" class="lazy-load" loading="lazy">
+                <img src="images/image5.jpg" alt="Image 5" class="lazy-load" loading="lazy">
+                <img src="images/image6.jpg" alt="Image 6" class="lazy-load" loading="lazy">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Thomas Todd Barney - Lazy Load Example</p>
+        <p id="year"></p>
+        <p id="last-modified"></p>
+</body>
+</html>
