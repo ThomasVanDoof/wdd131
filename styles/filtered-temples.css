@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #345830;
+  --secondary-color: #1E3F20;
+  --text-color: #FFFFFF;
+  --complimentary-color: #1A1F16;
+  --background-color: #4A7856;
+  --heading-font: 'Rubik', Arial, sans-serif;
+  --body-font: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+  font-family: var(--heading-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  transition: max-height 0.3s ease;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  font-family: var(--body-font);
+}
+
+nav a:hover {
+  background-color: var(--complimentary-color);
+}
+
+figcaption {
+  color: var(--text-color);
+}
+
+.temple-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.temple-gallery figure {
+  margin: 0;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temple-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 350px;
+}
+
+@media (min-width: 600px) {
+  .temple-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .temple-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+#menu {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+nav ul {
+  transition: max-height 0.3s ease;
+}
+
+@media (max-width: 700px) {
+  #menu {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    background: var(--secondary-color);
+    width: 100%;
+    padding: 0;
+  }
+  nav ul.open {
+    max-height: 500px;
+    padding: 1rem 0;
+  }
+}
+
+footer {
+  border-top: 4px solid var(--complimentary-color);
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--text-color);
+  background: var(--primary-color);
+  font-family: var(--body-font);
+}
