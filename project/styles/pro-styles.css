@@ -1,3 +1,15 @@
+
+:root {
+    --primary-color: #0f0f0f;
+    --text-color: #fdfae2;
+    --header-color: #cacaca;
+    --secondary-color: #000000;
+    --link-color: #b1fba0;
+    --hover-color: #e6b3f5;
+}
+
+
+
 header {
     font-family: 'Tourney';
     display: flex;
@@ -7,15 +19,15 @@ header {
 
 body {
     font-family: 'Geo', sans-serif;
-    background-color: #0f0f0f;
-    color: #fdfae2;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
 nav {
-    background-color: #0f0f0f;
-    color: #dee2fa;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 10px 20px;
 }
 
@@ -40,28 +52,28 @@ nav ul {
 }
 
 .nav-list .logo img {
-  height: 60px; /* Adjust as needed */
+  height: 60px;
 }
 
 nav a {
-    color: #dee2fa;
-    text-decoration: none;
+    color: var(--link-color);
+    text-decoration: underline;
     margin: 0 15px;
 }
 
 nav :hover {
     text-decoration: underline;
-    color: #dfeac6;
+    color: var(--hover-color);
 }
 
 h2{
     font-family: 'Bebas Neue', sans-serif;
-    color: #c6cbea;
+    color: var(--header-color);
 }
 
 h1 {
     font-family: 'Bitcount Grid Single', sans-serif;
-    color: #fcf1bf;
+    color: var(--header-color);
     text-align: center;
     margin-top: 20px;
 }
@@ -83,7 +95,7 @@ h1 {
   padding: 20px;
   width: 80%;
   max-width: 600px;
-  background-color: rgb(6, 16, 44);
+  background-color: var(--primary-color);
   border-radius: 8px;
   text-align: center;
 }
@@ -106,11 +118,17 @@ h1 {
 footer {
   text-align: center;
   padding: 20px;
+  background-color: var(--secondary-color);
 }
 
 a {
-  color: #0066cc;
+  color: var(--link-color);
   cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color);
   text-decoration: underline;
 }
 
